@@ -59,7 +59,9 @@ const mockProfile = {
   ],
 }
 
-export default function ProfilePage({ params }: { params: { username: string } }) {
+export default async function ProfilePage({ params }: { params: Promise<{ username: string }> }) {
+  const { username } = await params
+
   return (
     <div className="relative min-h-screen">
       <Navigation />

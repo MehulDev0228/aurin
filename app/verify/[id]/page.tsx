@@ -6,10 +6,12 @@ import { Badge } from "@/components/ui/badge"
 import { Award, CheckCircle, Calendar, User, Building, Hash } from "lucide-react"
 import Link from "next/link"
 
-export default function VerifyPage({ params }: { params: { id: string } }) {
+export default async function VerifyPage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params
+
   // Mock badge data
   const badge = {
-    id: params.id,
+    id: id,
     title: "Web Development Bootcamp",
     issuer: "Tech University",
     recipient: "John Doe",
