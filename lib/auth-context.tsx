@@ -17,6 +17,7 @@ interface User {
 interface AuthContextType {
   user: User | null
   isAuthenticated: boolean
+  loading: boolean // Added loading state to interface
   login: (email: string, password: string) => Promise<void>
   signup: (name: string, email: string, password: string, role: "user" | "organizer") => Promise<void>
   logout: () => void
@@ -28,6 +29,7 @@ const AuthContext = createContext<AuthContextType | undefined>(undefined)
 export function AuthProvider({ children }: { children: ReactNode }) {
   const [user, setUser] = useState<User | null>(null)
   const [isAuthenticated, setIsAuthenticated] = useState(false)
+  const [loading, setLoading] = useState(true) // Added loading state
 
   useEffect(() => {
     // Check if user is logged in (from localStorage)
@@ -36,6 +38,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       setUser(JSON.parse(storedUser))
       setIsAuthenticated(true)
     }
+    setLoading(false) // Set loading to false after checking
   }, [])
 
   const login = async (email: string, password: string) => {
@@ -87,7 +90,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   }
 
   return (
-    <AuthContext.Provider value={{ user, isAuthenticated, login, signup, logout, updateUser }}>
+    <AuthContext.Provider value={{ user, isAuthenticated, loading, login, signup, logout, updateUser }}>
       {children}
     </AuthContext.Provider>
   )
