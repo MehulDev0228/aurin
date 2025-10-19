@@ -94,13 +94,13 @@ export default function HomePage() {
               transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
               className="text-7xl sm:text-8xl lg:text-9xl font-black tracking-tight leading-[0.9] mb-12"
             >
-              <span className="inline-block">Your achievements</span>
+              <span className="inline-block">Own your</span>
               <br />
               <span className="inline-block font-[family-name:var(--font-playfair)] italic font-normal text-primary">
-                deserve better
+                brilliance.
               </span>
               <br />
-              <span className="inline-block">than a PDF.</span>
+              <span className="inline-block">Forever.</span>
             </motion.h1>
 
             <motion.p
@@ -109,9 +109,9 @@ export default function HomePage() {
               transition={{ duration: 1, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
               className="text-2xl sm:text-3xl text-muted-foreground font-light leading-relaxed max-w-2xl mb-16"
             >
-              Permanent. Verifiable. Shareable.
+              Your achievements. Verified on blockchain.
               <br />
-              Your brilliance, on the blockchain.
+              Impossible to fake. Always yours.
             </motion.p>
 
             <motion.div
@@ -125,7 +125,7 @@ export default function HomePage() {
                     size="lg"
                     className="text-lg px-12 h-16 rounded-full bg-primary text-background hover:bg-primary/90 font-bold glow-neon-strong transition-all duration-500 hover:scale-105 group"
                   >
-                    Start your legacy
+                    Claim your legacy
                     <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
                   </Button>
                 </Link>
@@ -148,18 +148,18 @@ export default function HomePage() {
                 className="lg:col-span-3 space-y-8 text-black"
               >
                 <h2 className="text-5xl sm:text-6xl lg:text-7xl font-black tracking-tight leading-[0.95]">
-                  Certificates fade.
-                  <br />
-                  PDFs get lost.
+                  Your wins
                   <br />
                   <span className="font-[family-name:var(--font-playfair)] italic font-normal text-gray-400">
-                    LinkedIn is just another profile.
+                    shouldn't disappear.
                   </span>
                 </h2>
 
                 <p className="text-xl text-gray-600 font-light leading-relaxed max-w-xl">
-                  You worked hard for that hackathon win. That conference talk. That course completion. But where is it
-                  now?
+                  That hackathon trophy. That conference badge. That certification you earned at 3 AM.
+                  <br />
+                  <br />
+                  They deserve better than a dusty PDF.
                 </p>
               </motion.div>
 
@@ -223,16 +223,16 @@ export default function HomePage() {
                 className="lg:col-span-3 space-y-8 order-1 lg:order-2"
               >
                 <h2 className="text-5xl sm:text-6xl lg:text-7xl font-black tracking-tight leading-[0.95]">
-                  What if your achievements
+                  Make them
                   <br />
                   <span className="font-[family-name:var(--font-playfair)] italic font-normal text-primary">
-                    lived forever?
+                    permanent.
                   </span>
                 </h2>
 
                 <p className="text-xl text-muted-foreground font-light leading-relaxed max-w-xl">
-                  Aurin turns your achievements into permanent, blockchain-verified badges. Impossible to fake. Always
-                  yours. Ready to share.
+                  Aurin turns every achievement into a blockchain-verified badge. One link. Instant proof. Forever
+                  yours.
                 </p>
 
                 <div className="space-y-4 pt-4">
@@ -273,10 +273,10 @@ export default function HomePage() {
             className="text-center space-y-12 mb-20"
           >
             <h2 className="text-5xl sm:text-6xl lg:text-7xl font-black tracking-tight leading-[0.95]">
-              Show the world
+              Show them
               <br />
               <span className="font-[family-name:var(--font-playfair)] italic font-normal text-gray-400">
-                what you've built.
+                what you're made of.
               </span>
             </h2>
           </motion.div>
@@ -325,7 +325,7 @@ export default function HomePage() {
             viewport={{ once: true }}
             className="text-sm font-mono text-muted-foreground uppercase tracking-widest mb-12"
           >
-            Students from these universities are already on Aurin
+            The best are already here
           </motion.p>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-12 items-center opacity-30">
@@ -369,15 +369,15 @@ export default function HomePage() {
           className="container mx-auto max-w-4xl text-center relative z-10 space-y-12"
         >
           <h2 className="text-6xl sm:text-7xl lg:text-8xl font-black tracking-tight leading-[0.95]">
-            This is where
+            Your legacy
             <br />
-            <span className="font-[family-name:var(--font-playfair)] italic font-normal text-primary">your story</span>
-            <br />
-            lives.
+            <span className="font-[family-name:var(--font-playfair)] italic font-normal text-primary">
+              starts here.
+            </span>
           </h2>
 
           <p className="text-2xl sm:text-3xl text-muted-foreground font-light leading-relaxed max-w-2xl mx-auto">
-            Join the students who are building their legacy on Aurin.
+            Join thousands building something permanent.
           </p>
 
           <div className="pt-8">
@@ -387,12 +387,12 @@ export default function HomePage() {
                   size="lg"
                   className="text-xl px-16 h-20 rounded-full bg-primary text-background hover:bg-primary/90 font-bold glow-neon-strong transition-all duration-500 hover:scale-105 group"
                 >
-                  Get started free
+                  Start now
                   <ArrowRight className="w-6 h-6 ml-3 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </Link>
             </MagneticButton>
-            <p className="text-sm text-muted-foreground mt-6 font-mono">Takes 60 seconds • No credit card required</p>
+            <p className="text-sm text-muted-foreground mt-6 font-mono">Free forever • No credit card • 60 seconds</p>
           </div>
         </motion.div>
       </section>
